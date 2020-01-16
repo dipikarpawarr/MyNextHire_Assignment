@@ -25,7 +25,7 @@ export class JobDescriptionComponent implements OnInit{
             ID : this.route.snapshot.params['ID']
         }
        
-         // Instead of JSON file, we can use REST Services. Accordingly we just change keys.
+        // Instead of JSON file, we can use REST Services. Accordingly we can change keys.
         this.httpClient.get("assets/JSON_Files/" + this.urlID + ".json").subscribe(data => {
             console.log(data);
             this.JD = data;

@@ -18,8 +18,7 @@ export class JobApplicationComponent implements OnInit{
         let urlFromID = parseInt(this.route.snapshot.paramMap.get('ID'));
         this.urlID = urlFromID; 
 
-
-        //Here I have used JSON file for dynamic data. Instead of JSON file you can use your REST API.
+        // Instead of JSON file, we can use REST Services. Accordingly we can change keys.
         this.httpClient.get("assets/JSON_Files/" + this.urlID + ".json").subscribe(data => {
             console.log(data);
             this.JD = data;
