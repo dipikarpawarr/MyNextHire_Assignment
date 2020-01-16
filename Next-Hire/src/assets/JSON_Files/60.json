@@ -1,0 +1,13 @@
+{
+	"ID" : 60,
+	
+	"Req_Title" : "Lead UI Developer",
+	
+	"Location" : "Pune",
+	
+	"Experience" : "2-5 yrs",
+	
+	"Positions" : 1,
+	
+	"Job_Description" : "RESPONSIBILITIES:<ul><li>Lead UI design and development of product modules independently</li><li>Influence and maintain coding standards</li><li>Interact with key stakeholders and exchange information</li><li>Drive constant innovation, performance tuning, automation</li></ul>SKILLS:<ul><li>Demonstrable experience of 2-5 years in UI development (angular js, angular 6, javascript, html, css) is a MUST. No PHP.</li><li>Working knowledge of supporting libraries like moment.js, angular UI utils etc</li><li>Understanding of REST APIs and working with them is a MUST</li><li>Must have demonstrable experience of working in at least one chart library like chart.js, d3.js, zingchart</li><li>Excellent grip over bootstrap, html5 and css/less/sass required.</li><li>Ability to integrate open source libraries independently </li><li>Version control systems like GIT, SVN </li><li>Strong problem solving, debugging, troubleshooting skills</li><li>Ability to effectively communicate with other team members - technical, testers and business users </li><li>Knowledge of React Native, KarmaJS, Jasmine, MochaJS, Selenium is an added advantage</li></ul>EDUCATION:<ul><li>BE/BTech from a reputed institute with excellent grades</li></ul>"
+}

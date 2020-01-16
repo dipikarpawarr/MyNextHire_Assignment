@@ -13,15 +13,10 @@ export class JobDescriptionComponent implements OnInit{
 
     JD : any = [];
     public urlID;
-
+   
     constructor(private router:Router, private route:ActivatedRoute, private httpClient:HttpClient){}
 
     ngOnInit(){
-        //Here I have used JSON file for dynamic data. Instead of JSON file you can use your REST API.
-        this.httpClient.get("assets/Job_Description.json").subscribe(data => {
-            console.log(data);
-            this.JD = data;
-        })
 
         let urlFromID = parseInt(this.route.snapshot.paramMap.get('ID'));
         this.urlID = urlFromID;
@@ -29,9 +24,17 @@ export class JobDescriptionComponent implements OnInit{
         this.jobDescription = {
             ID : this.route.snapshot.params['ID']
         }
+       
+         // Instead of JSON file, we can use REST Services. Accordingly we just change keys.
+        this.httpClient.get("assets/JSON_Files/" + this.urlID + ".json").subscribe(data => {
+            console.log(data);
+            this.JD = data;
+        })
+        
     }
 
     onSelect(jd){
         this.router.navigate(['/jobApplication', jd.ID]);
     }
+
  }

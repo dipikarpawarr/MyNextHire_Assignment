@@ -1,12 +1,93 @@
-<p>--------{{urlID}}</p>
-
-<div>
-    <div *ngFor="let jd of JD">
-        <div *ngIf = "jd.ID == urlID">
-            <h3>{{jd.Req_Title}}</h3>
-            <h6>ID: {{jd.ID}} | {{jd.Experience}} | {{jd.Location}} | careers</h6>
-            <hr><br>
-            <h5>RESUME</h5>
+<div class="mainDiv">
+    <h5>{{JD.Req_Title}}</h5>
+    <h6>ID: {{JD.ID}} | {{JD.Experience}} | {{JD.Location}} | careers</h6>
+    <hr>
+    <h6>RESUME</h6><br>
+    <p>Attach CV <span>&#42;</span><small> (doc/docx/pdf/rtf only)</small></p>
+    <div class="file-field">
+        <div class="btn btn-primary btn-sm float-left">
+          <input type="file" multiple>
         </div>
+    </div><br><br><br>
+    <h6>PERSONAL DETAILS</h6><br>
+    <div>
+        <div id="one">
+            <p><b>First Name </b><span>&#42;</span></p>
+            <input type="text" class="form-control">
+        </div>
+        <div id="two">
+            <p><b>Last Name </b><span>&#42;</span></p>
+            <input type="text" class="form-control">
+        </div>
+        <div id="one">
+            <p><b>Email </b><span>&#42;</span></p>
+            <input type="text" class="form-control">
+        </div>
+        <div id="two">
+            <p><b>Country Code | Phone Number </b><span>&#42;</span></p>
+            <input type="text" class="form-control">
+        </div>
+        <div id="one">
+            <p><b>Address </b><span>&#42;</span></p>
+            <input type="text" class="form-control">
+        </div>
+        <div id="two">
+            <p><b>Date Of Birth </b><span>&#42;</span><small>(18 yrs min)</small></p>
+            <input type="text" class="form-control">
+        </div>
+        <div id="one">
+            <p><b>Gender </b></p>
+            <select class="form-control">
+                <option>Choose</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+        </div><br><br>
+        <h6>IDENTITY</h6><br>
+        <div id="one">
+            <p><b>Passport Number</b></p>
+            <input type="text" class="form-control" placeholder="e.g. F9999999">
+        </div><br><br>
+        <h6>EMPLOYMENT DETAILS</h6><br>
+        <div id="one">
+            <p><b>Total Experience (yrs)</b></p>
+            <input type="text" class="form-control">
+        </div>
+        <div id="two">
+            <p><b>Relevant Experience (yrs)</b></p>
+            <input type="text" class="form-control">
+        </div>
+        <div id="one">
+            <p><b>Current Company</b><span>&#42;</span></p>
+            <input type="text" class="form-control">
+        </div>
+        <div id="two">
+            <p><b>Notice Period (days)</b></p>
+            <input type="text" class="form-control">
+        </div>
+        <div id="one">
+            <p><b>Current Salary - Fixed</b><span>&#42;</span></p>
+            <input type="text" class="form-control" placeholder="Enter Annual Salary">
+        </div>
+        <div id="two">
+            <p><b>Expected Salary</b><span>&#42;</span></p>
+            <input type="text" class="form-control" placeholder="Enter Annual Salary">
+        </div><br><br>
+        <h6>MESSAGE FROM APPLICANT</h6><br>
     </div>
+    <div id="three">
+        <p><b>Cover Notes</b><span>&#42;</span></p>
+        <textarea class="form-control"></textarea>
+    </div><br><br>
+    <div id="three">
+        <p><b>Consent</b></p>
+        <p><i>We process this data for recruitment purposes (e.g. screening, evaluations, employment letter generations, background verification) only. We also store this data in our applicant tracking system and are fully compliant with the local laws.If you have any questions or concerns, please do not hesitate to contact the recruiter or our reception</i></p>
+    </div>
+   <br>
+    <div id="three">
+        <input class="form-check-input" type="checkbox">
+        <p id="p_agree">I Agree</p>
+    </div><br><br>
+    <button id="btnSubmit" class="btn btn-secondary">Submit</button><br><br>
 </div>

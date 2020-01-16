@@ -1,3 +1,42 @@
 h5{
     color:#2b4c87;
 }
+.mainDiv{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.file-field{
+    margin-left: 0px;
+    background-color: rgb(255, 255, 255);
+}
+span{
+    color:red;
+}
+#one{
+    display: inline-block;
+    width:50%;
+}
+#two{
+    display: inline-block;
+    width:50%;
+}
+.form-control{
+    width:450px;
+}
+textarea{
+    height: 30px;
+}
+.form-check-input{
+    margin-left: 2px;
+}
+#p_agree{
+    margin-left: 20px;
+}
+#btnSubmit{
+    width:200px;
+    background-color: #2b4c87;
+    color:white;
+}
+h6{
+    color:#2b4c87;
+}

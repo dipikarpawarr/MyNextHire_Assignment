@@ -13,6 +13,7 @@
                 <th>Designation</th>
             </tr>
             <tr *ngFor="let careerArr of careerTableData | filter:searchText">
+                <!-- Instead of 'href','routerLink' is used ' to get faster result without page refresing -->
                 <td scope="col"><a routerLink="/jobDescription/:ID" (click)="onSelect(careerArr)">{{careerArr.ID}}</a></td>
                 <td scope="col"><a routerLink="/jobDescription/:ID" (click)="onSelect(careerArr)">{{careerArr.Req_Title}}</a></td>
                 <td scope="col"><a routerLink="/jobDescription/:ID" (click)="onSelect(careerArr)">{{careerArr.Location}}</a></td>

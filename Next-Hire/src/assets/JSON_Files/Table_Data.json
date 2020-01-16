@@ -1,0 +1,74 @@
+[
+    {
+        "ID" : 68,
+        "Req_Title" : "Inside Sales Exexutive",
+        "Location" : "Pune",
+        "Experience" : "2-4 yrs",
+        "Positions" : 2,
+        "Designation" : "Inside Sales Exexutive"
+    },
+    {
+        "ID" : 66,
+        "Req_Title" : "Customer Acquisition Manager",
+        "Location" : "Pune",
+        "Experience" : "3-10 yrs",
+        "Positions" : 1,
+        "Designation" : "Customer Acquisition Manager"
+    },
+    {
+        "ID" : 67,
+        "Req_Title" : "Marketing Lead",
+        "Location" : "Pune",
+        "Experience" : "3-5 yrs",
+        "Positions" : 1,
+        "Designation" : "Marketing Lead"
+    },
+    {
+        "ID" : 65,
+        "Req_Title" : "Customer Success - Executive",
+        "Location" : "Pune",
+        "Experience" : "0-2 yrs",
+        "Positions" : 1,
+        "Designation" : "Solution Consultant - Customer Success"
+    },
+    {
+        "ID" : 44,
+        "Req_Title" : "Walkin - we are always hiring",
+        "Location" : "Pune",
+        "Experience" : "1-2 yrs",
+        "Positions" : 0,
+        "Designation" : "Walkin - we are always hiring"
+    },
+    {
+        "ID" : 58,
+        "Req_Title" : "Customer Acquisition Manager",
+        "Location" : "Delhi/NCR",
+        "Experience" : "3-10 yrs",
+        "Positions" : 1,
+        "Designation" : "Manager, Customer Acquisition"
+    },
+    {
+        "ID" : 62,
+        "Req_Title" : "Fullstact JavaScript Developer",
+        "Location" : "Pune",
+        "Experience" : "2-4 yrs",
+        "Positions" : 1,
+        "Designation" : "Fullstact JavaScript Developer"
+    },
+    {
+        "ID" : 60,
+        "Req_Title" : "Lead UI Developer",
+        "Location" : "Pune",
+        "Experience" : "2-5 yrs",
+        "Positions" : 1,
+        "Designation" : "Lead UI Developer"
+    },
+    {
+        "ID" : 65,
+        "Req_Title" : "MyNextHire Product Evangelist",
+        "Location" : "Pune",
+        "Experience" : "10-15 yrs",
+        "Positions" : 1,
+        "Designation" : "Product Evangelist"
+    }
+]

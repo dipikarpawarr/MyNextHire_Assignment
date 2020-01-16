@@ -1,0 +1,35 @@
+#mainDiv{
+    background-color: #2b4c87;
+}
+#one{
+    display: inline-block;
+    width:20%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#two{
+    display: inline-block;
+    margin-top: 1px;
+    width:16%;
+}
+#three{
+    display: inline-block;
+    width:16%;
+}
+#four{
+    display: inline-block;
+    width:16%;
+}   
+#five{
+    display: inline-block;
+    width:16%;
+}
+a{
+    color:gray;
+}
+a:hover{
+    color:white;
+}
+h5{
+    color:white;
+}

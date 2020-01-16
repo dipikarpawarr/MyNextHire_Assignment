@@ -1,13 +1,9 @@
-<div *ngFor="let jd of JD">
-        <div *ngIf = "jd.ID == urlID">
-            <div id="one"><h3>{{jd.Req_Title}}</h3></div>
-            <div id="two"><a routerLink="/career">View Jobs</a></div>
-            <h5>ID: {{jd.ID}} | {{jd.Experience}} | {{jd.Location}} | careers</h5>
-            <hr><br>
-            <p [innerHTML] = "jd.Job_Description"></p>
-            <hr>
-        </div>
-    </div>
-
-
-<button id="btnApply" class="btn btn-secondary"><a id="btnLink" (click)="onSelect(jd)" routerLink="/jobApplication/:ID">Apply</a></button>
+<div>
+    <div id="one"><h5>{{JD.Req_Title}}</h5></div>
+    <div id="two"><a routerLink="/career">View Jobs</a></div>
+    <h6>ID: {{JD.ID}} | {{JD.Experience}} | {{JD.Location}} | careers</h6>
+    <hr><br>
+    <p [innerHTML] = "JD.Job_Description"></p>
+    <hr>
+    <button id="btnApply" class="btn btn-secondary" (click)="onSelect(JD)">Apply</button><br><br>
+</div>

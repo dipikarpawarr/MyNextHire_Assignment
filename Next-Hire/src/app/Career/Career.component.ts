@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -15,7 +15,8 @@ export class CareerComponent implements OnInit {
     constructor(private router:Router, private httpClient:HttpClient){}
 
     ngOnInit(){
-        //Here I have used JSON file for dynamic data. Instead of JSON file you can use your REST API.
+
+        // Instead of JSON file, we can use REST Services. Accordingly we just change keys.
         this.httpClient.get("assets/Table_Data.json").subscribe(data => {
             console.log(data);
             this.careerTableData = data;
@@ -24,6 +25,8 @@ export class CareerComponent implements OnInit {
     }
 
    onSelect(careerArr){
+       // Using routing, we can navigate to Job Description Page with current Job ID
+       // OR We can directly navigate to particular page using this url-'http://localhost:4200/jobApplication/58'
         this.router.navigate(['/jobDescription', careerArr.ID]);
     }
 }

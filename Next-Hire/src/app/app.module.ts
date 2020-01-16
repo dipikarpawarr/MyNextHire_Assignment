@@ -11,6 +11,7 @@ import { JobDescriptionComponent } from './JobDescription/JobDescription.compone
 
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { JobApplicationComponent } from './JobApplication/JobApplication.component';
+import { FooterComponent } from './Footer/Footer.component';
 
 
 const appRoutes : Routes= [
@@ -26,8 +27,8 @@ const appRoutes : Routes= [
     CareerComponent,
     HeaderComponent,
     JobDescriptionComponent,
-    JobApplicationComponent
-    
+    JobApplicationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
