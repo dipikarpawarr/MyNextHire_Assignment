@@ -1,0 +1,25 @@
+<br>
+<div id="mainDiv">
+    <div id="one"><h4>Current Openings</h4></div><div id="two" class="searchBar"><input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder=" SearchID / Title / Location" aria-label="Search"></div><br><br>
+    
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>ID</th>
+                <th>Req Title</th>
+                <th>Location</th>
+                <th>Experience</th>
+                <th>Positions</th>
+                <th>Designation</th>
+            </tr>
+            <tr *ngFor="let careerArr of careerTableData | filter:searchText">
+                <td scope="col"><a routerLink="/jobDescription/:ID" (click)="onSelect(careerArr)">{{careerArr.ID}}</a></td>
+                <td scope="col"><a routerLink="/jobDescription/:ID" (click)="onSelect(careerArr)">{{careerArr.Req_Title}}</a></td>
+                <td scope="col"><a routerLink="/jobDescription/:ID" (click)="onSelect(careerArr)">{{careerArr.Location}}</a></td>
+                <td scope="col"><a routerLink="/jobDescription/:ID" (click)="onSelect(careerArr)">{{careerArr.Experience}}</a></td>
+                <td scope="col"><a routerLink="/jobDescription/:ID" (click)="onSelect(careerArr)">{{careerArr.Positions}}</a></td>
+                <td scope="col"><a routerLink="/jobDescription/:ID" (click)="onSelect(careerArr)">{{careerArr.Designation}}</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,12 @@
+<p>--------{{urlID}}</p>
+
+<div>
+    <div *ngFor="let jd of JD">
+        <div *ngIf = "jd.ID == urlID">
+            <h3>{{jd.Req_Title}}</h3>
+            <h6>ID: {{jd.ID}} | {{jd.Experience}} | {{jd.Location}} | careers</h6>
+            <hr><br>
+            <h5>RESUME</h5>
+        </div>
+    </div>
+</div>

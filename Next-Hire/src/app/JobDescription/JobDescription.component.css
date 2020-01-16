@@ -1,0 +1,21 @@
+#btnApply{
+    background-color: #2b4c87;
+    color:white;
+    width:200px;
+    margin-left: 270px;
+}
+div{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#one{
+    display: inline-block;
+    margin-left:0px;
+}
+#two{
+    display: inline-block;
+    margin-left:700px;
+}
+#btnLink{
+    color:white;
+}
