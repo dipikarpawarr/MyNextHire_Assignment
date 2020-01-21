@@ -16,8 +16,8 @@ export class CareerComponent implements OnInit {
 
     ngOnInit(){
 
-        // Instead of JSON file, we can use REST Services. Accordingly we just change keys.
-        this.httpClient.get("assets/Table_Data.json").subscribe(data => {
+        // Instead of JSON file, we can use REST Services. Accordingly we can change keys.
+        this.httpClient.get("assets/JSON_Files/Table_Data.json").subscribe(data => {
             console.log(data);
             this.careerTableData = data;
         })

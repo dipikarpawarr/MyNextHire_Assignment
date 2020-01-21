@@ -9,8 +9,7 @@ import { HttpClient } from '@angular/common/http';
     styleUrls:['./JobDescription.component.css']
 })
 export class JobDescriptionComponent implements OnInit{
-    jobDescription : {ID};
-
+  
     JD : any = [];
     public urlID;
    
@@ -18,21 +17,15 @@ export class JobDescriptionComponent implements OnInit{
 
     ngOnInit(){
 
-        let urlFromID = parseInt(this.route.snapshot.paramMap.get('ID'));
-        this.urlID = urlFromID;
-
-        this.jobDescription = {
-            ID : this.route.snapshot.params['ID']
-        }
+        let IDFromURL = parseInt(this.route.snapshot.paramMap.get('ID'));
+        this.urlID = IDFromURL;
        
         // Instead of JSON file, we can use REST Services. Accordingly we can change keys.
         this.httpClient.get("assets/JSON_Files/" + this.urlID + ".json").subscribe(data => {
             console.log(data);
             this.JD = data;
         })
-        
     }
-
     onSelect(jd){
         this.router.navigate(['/jobApplication', jd.ID]);
     }
